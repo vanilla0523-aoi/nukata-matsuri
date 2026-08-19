@@ -253,6 +253,21 @@ footer.site{background:var(--forest);color:#e8dcc4;margin-top:20px;padding:44px 
 .drawer-panel .dcount{margin-top:20px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center}
 .drawer-panel .dcount .cb-num{font-family:"Zen Old Mincho",serif;font-weight:800;font-size:30px;color:var(--clay)}
 </style>
+<!-- Google Analytics (GA4) -->
+<!-- ↓ GA4の測定ID（G-XXXXXXXXXX）をここに入れると計測が有効になります。未設定の間は何も読み込みません。 -->
+<script>
+  var GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+  if (GA_MEASUREMENT_ID && GA_MEASUREMENT_ID.indexOf("XXXX") < 0) {
+    var _s = document.createElement("script");
+    _s.async = true;
+    _s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_MEASUREMENT_ID;
+    document.head.appendChild(_s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", GA_MEASUREMENT_ID);
+  }
+</script>
 </head>
 <body>
 
@@ -496,7 +511,7 @@ footer.site{background:var(--forest);color:#e8dcc4;margin-top:20px;padding:44px 
   </div>
   <div class="foot-bottom">
     <div>主催：額田区／協力：福知山市・(一社)森の京都地域振興DMO／後援：福知山市・夜久野ふるさとづくり協議会／実行委：「額田のダシ」振興会事務局<br>出典・参考：2025年 額田まつり公式ポスター・チラシ（森の京都）、額田のダシ行事（Wikipedia）</div>
-    <div>© 額田まつり</div>
+    <div>© 額田まつり<br><span style="font-size:11px">本サイトはアクセス解析のためGoogle Analytics（Cookie）を利用します。<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener" style="color:#cabb96;text-decoration:underline">詳細</a></span></div>
   </div>
 </footer>
 
